@@ -1,0 +1,45 @@
+#ifndef diccHash
+#define diccHash
+
+#include "aed2.h"
+#include "Tipos.h"
+
+using namespace aed2;
+
+	class DiccHash
+	{
+		public:
+			
+			//constructor
+			DiccHash(Nat n);  
+			
+			//destructor
+			~DiccHash();
+			
+			//funciones
+			void definir(Nat n, Agente a);			
+			bool definido(Agente a);
+			Agente significado(Nat n);
+			
+			
+			
+			//operaciones
+			//bool operator<(const Campus& c1) const;
+			//bool operator!=(const Campus& c1) const;
+			//bool operator==(const Campus& c1) const;
+
+		private:
+			struct tupla{
+
+				Nat clave;
+				Agente significado;
+			}
+			
+			Arreglo <tupla> arrayy;
+			Nat tamano;
+			
+	};
+	
+
+
+#endif

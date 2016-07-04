@@ -1,0 +1,55 @@
+#ifndef campus
+#define campus
+
+#include "aed2.h"
+#include "Tipos.h"
+
+using namespace aed2;
+
+	class Campus
+	{
+		public:
+			
+			//constructor
+			Campus(Nat Filas, Nat Columnas);  
+			
+			//destructor
+			~Campus();
+			
+			//funciones
+			void agregarObstaculo(Posicion p);			
+			 Nat filas();
+			 Nat columnas();
+			bool ocupada(Posicion p);
+			bool posvalida(Posicion p);
+			bool esIngreso(Posicion p);
+			bool ingresoInferior(Posicion p);
+			Conj<Posicion> vecinos(Posicion p);
+			Conj<Posicion> vecinosValidos(Posicion p);
+			Nat distancia(Posicion p1, Posicion p2);
+			Posicion proxPosicion(Posicion p, Direccion d);
+			Conj<Posicion> ingresosMasCercanos(Posicion p);
+			Posicion posicionMinimaDistancia(Posicion p, Conj<Posicion> cp);
+			Conj<Posicion> enQueDireccionesVoy(Posicion p1, Posicion p2);
+			Direccion enQueDireccionVoy(Posicion p1, Posicion p2);
+			Conj<Posicion> objetivosDeMinimaDistancia(Posicion p, Conj<Posicion> cp, Nat dist);
+			
+			
+			
+			
+			//operaciones
+			//bool operator<(const Campus& c1) const;
+			//bool operator!=(const Campus& c1) const;
+			//bool operator==(const Campus& c1) const;
+
+		private:
+			
+			 Nat Filas;
+			 Nat Columnas;
+			 Conj<posicion> ocupadas;
+			
+	};
+	
+
+
+#endif

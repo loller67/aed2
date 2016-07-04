@@ -1,0 +1,124 @@
+#include "CampusSeguro.h"
+using namespace std;
+
+#include <cassert>
+
+//constructor
+CampusSeguro::ComenzarRastrillaje(Campus& c, dicc<Agente, Posicion> d){
+	//assert(	{ (8 a:agente) (def ? (a, d))L(posVálida(Obtener(a, d)) ^ :ocupada ? (Obtener(a, d), c))) ^ (8 a, a2:agente)	((def ? (a, d) ^ def ? (a2, d) ^ a 6 = a2))LObtener(a, d) 6 = Obtener(a2, d))
+	_campus = c
+	_Hippies = 
+}
+
+//destructor
+CampusSeguro::~CampusSeguro(){
+
+
+}
+
+//funciones
+CampusSeguro::Campus& campus(){
+
+
+}
+
+
+itDiccT(Nombre) CampusSeguro::estudiantes(){
+
+
+}
+
+
+itDiccT(Nombre) CampusSeguro::hippies(){
+
+
+}
+
+
+itConj(Nombre) CampusSeguro::agentes(){
+
+
+}
+
+Posicion CampusSeguro::posEstYHip(Nombre n){
+
+
+}
+
+
+Posicion CampusSeguro::posAgente(Agente a){
+
+
+}
+
+
+Nat CampusSeguro::cantSanciones(Agente a){
+
+
+}
+
+
+Nat CampusSeguro::cantHippiesAtrapados(Agente a){
+
+
+}
+
+
+void CampusSeguro::ingresarEstudiante(Nombre n, Posicion p){
+
+
+}
+
+
+void CampusSeguro::ingresarHippie(Nombre n, Posicion p){
+
+
+}
+
+
+void CampusSeguro::moverEstudiante(Nombre n, Direccion d){
+
+
+}
+
+
+void CampusSeguro::moverHippie(Nombre n){
+
+
+}
+
+
+void CampusSeguro::moverAgente(Nombre n){
+
+
+}
+
+
+Nat CampusSeguro::cantHippies(){
+
+
+}
+
+
+Nat CampusSeguro::cantEstudiantes(){
+
+
+}
+
+
+Agente CampusSeguro::masVigilante(){
+	return 
+
+}
+
+
+Conj<Agente> CampusSeguro::conMismasSanciones(Agente a){
+
+
+}
+
+
+itConj(Agente) CampusSeguro::conKSanciones(Nat k){
+
+
+}

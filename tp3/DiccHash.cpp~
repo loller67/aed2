@@ -1,0 +1,38 @@
+#include "DiccHash.h"
+using namespace std; 
+			
+DiccHash::DiccHash(Nat n){
+
+
+
+	// tiene que retornar algo esto pero ni idea
+}
+
+DiccHash::~DiccHash()
+{ 
+	
+	
+				
+	
+}
+
+void DiccHash::definir(Nat n, Agente a){
+
+
+
+
+}	
+
+
+bool DiccHash:: definido?(Agente a){
+
+	return false;
+
+}
+
+Agente DiccHash:: significado(Nat n){
+
+
+	 
+}
+			 

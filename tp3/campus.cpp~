@@ -1,0 +1,106 @@
+#include "campus.h"
+using namespace std; 
+			
+
+
+Campus::Campus(Nat Filas, Nat Columnas){
+
+
+
+	// tiene que retornar algo esto pero ni idea
+}
+
+Campus::~Campus()
+{ 
+	
+	
+				
+	
+}
+
+void Campus::agregarObstaculo(Posicion p){
+
+
+
+
+}	
+
+	
+Nat Campus:: filas() {
+
+	return filas; 
+}
+		
+
+Nat Campus:: columnas() {
+
+	return columnas; 
+}	
+
+
+bool Campus:: ocupada(Posicion p){
+
+	return false;
+
+}
+
+bool Campus:: posvalida(Posicion p){
+
+	return true;
+}
+
+
+bool Campus::esIngreso(Posicion p){
+
+	return true;
+}
+
+
+bool Campus::ingresoInferior(Posicion p){
+
+
+	return true;
+}
+Conj<Posicion> Campus:: vecinos(Posicion p){
+
+	
+}
+
+Conj<Posicion> Campus::vecinosValidos(Posicion p){
+
+
+
+}
+
+
+Nat  Campus:: distancia(Posicion p1, Posicion p2){
+
+
+}
+Posicion Campus::proxPosicion(Posicion p, Direccion d){
+
+}
+Conj<Posicion> Campus:: ingresosMasCercanos(Posicion p){
+
+}
+Posicion Campus:: posicionMinimaDistancia(Posicion p, Conj<Posicion> cp){
+
+}
+Conj<Posicion> Campus:: enQueDireccionesVoy(Posicion p1, Posicion p2){
+
+
+}
+Direccion Campus:: enQueDireccionVoy(Posicion p1, Posicion p2){
+}
+
+
+
+Conj<Posicion> Campus:: objetivosDeMinimaDistancia(Posicion p, Conj<Posicion> cp, Nat dist){
+
+}
+
+
+
+
+
+

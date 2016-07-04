@@ -1,0 +1,108 @@
+#ifndef campusSeguro
+#define campusSeguro
+
+#include "Modulos-CPP/aed2.h"
+
+using namespace aed2;
+
+	class CampusSeguro
+	{
+		public:
+			
+			//constructor
+			CampusSeguro(Nat filas, Nat columnas);  
+			
+			//destructor
+			~CampusSeguro();
+			
+			//funciones
+			Campus& campus();
+			itDiccT(Nombre) estudiantes();
+			itDiccT(Nombre) hippies();
+			itConj(Nombre) agentes();
+			Posicion posEstYHip(Nombre n);
+			Posicion posAgente(Agente a);
+			Nat cantSanciones(Agente a);
+			Nat cantHippiesAtrapados(Agente a);
+			void ComenzarRastrillaje(Campus& c, dicc<Agente,Posicion> d);
+			void ingresarEstudiante(Nombre n, Posicion p);
+			void ingresarHippie(Nombre n, Posicion p);
+			void moverEstudiante(Nombre n, Direccion d);
+			void moverHippie(Nombre n);
+			void moverAgente(Nombre n);
+			Nat cantHippies();
+			Nat cantEstudiantes();
+			Agente masVigilante();
+			Conj<Agente> conMismasSanciones(Agente a);
+			itConj(Agente) conKSanciones(Nat k);
+			
+			
+			//operaciones
+			//bool operator<(const Campus& c1) const;
+			//bool operator!=(const Campus& c1) const;
+			//bool operator==(const Campus& c1) const;
+
+		private:
+			struct Tuphash;
+			struct Tuplist;
+			struct MasVigilante;
+			struct MasVigilante{
+				Agente ag;
+				Nat cant;
+				
+			}
+			struct Tuplist{
+				conj<Agente> agentes;
+				Nat sanc;
+
+			}
+			struct Tuphash{
+				Agente a;
+				Posicion p;
+				Nat capturados;
+				Nat sanciones;
+				itConj(Agente) mSanc;
+				itLista(Tuplist) lista;   
+			}
+
+			const Campus& campus;
+			diccTrie<Nombre,posicion> Hippies;
+			diccHash<Agente, Tuphash> AgentesD;
+			const conj<Agente> AgentesC;
+			Vector< <itConj(Agente) ag >,Nat sanc > sanciones;
+			<Lista< Conj<Agente > conj, Nat sanc    > > CantSanciones;
+			Vector<Vector< < <bool oc, Nombre n > est, <bool oc, Nombre n > hip, < > agente 
+	};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+#endif
